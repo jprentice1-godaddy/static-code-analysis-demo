@@ -25,7 +25,7 @@ jobs:
           pip3 install bandit_sarif_formatter
 
       - name: Run Bandit
-        run: bandit -r . --format sarif --output results/results.sarif
+        run: bandit -r . -ll --format sarif --output results/results.sarif
         #run: bandit -r .
         continue-on-error: true
 
